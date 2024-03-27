@@ -4,7 +4,9 @@
     <!-- Make sure to log stages to github -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>The Cat Crazy Forum</title>
+    
     <style>
       #welcome {
         background-color:lightblue;
@@ -31,7 +33,15 @@
         background-color:lightskyblue;
         
       }
-      
+
+      fieldset {
+        text-align:center
+      }
+
+     
+      #submit {
+        background-color:lightblue;
+      }
      
       
       
@@ -47,8 +57,10 @@
 
     <a href="#homepage" class="homepage">Home</a>
 
-      <div id="homepage-text"> <img src="https://3.bp.blogspot.com/-e9iaysd5X1E/UDJmovqjrYI/AAAAAAAAAaE/lQVAJcSeCtA/s1600/catpicturess+(4).jpg" alt="A picture of a cat" width="400" height="400"> <p id="homeinfo">I am a student at the <span class="orange-highlight">Code Institute </span> learning a level 5 diploma in <span class="orange-highlight">software development!</span> I hope to one day become a <span style="background-color:green;">senior software developer</span> with an established company.</p>
-      <img style="float: right;" alt="" src="https://3.bp.blogspot.com/-e9iaysd5X1E/UDJmovqjrYI/AAAAAAAAAaE/lQVAJcSeCtA/s1600/catpicturess+(4).jpg" width="400" height="400" /></div>
+      <div id="homepage-text"> <img src="https://3.bp.blogspot.com/-e9iaysd5X1E/UDJmovqjrYI/AAAAAAAAAaE/lQVAJcSeCtA/s1600/catpicturess+(4).jpg" alt="A picture of a cat" width="400" height="400"> <p id="homeinfo" style="text-align:center;">I am a student at the <span class="orange-highlight">Code Institute </span> learning a level 5 diploma in <span class="orange-highlight">software development!</span> I hope to one day become a <span style="background-color:green;">senior software developer</span> with an established company.</p>
+        
+      <img style="float: right;" alt="" src="https://3.bp.blogspot.com/-e9iaysd5X1E/UDJmovqjrYI/AAAAAAAAAaE/lQVAJcSeCtA/s1600/catpicturess+(4).jpg" width="400" height="400"></div>
+    
     <hr>
     <div>
       <h3 style="text-align:center;">Come Post and Disscuss your little Bestfriends! Everyone here <em>loves </em>cats! </h3>
@@ -63,7 +75,83 @@
         </ul>
     
       </div>
+      <hr>
+      <form method="post" action="">
+        <fieldset>
+          <legend>Login</legend>
+        <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+  
+        <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+        <input type="submit" id="submit">
+        </fieldset>  
+      </form> 
     </div>
+    <br>
+    <div>
+      <form>
+      <fieldset>
+        <legend>Cat Questionair!</legend>
+      <h3>What is your favorite cat breed?</h3>
+        
+      <label for="ragdoll">Ragdoll -</label>
+      <input type="radio" name="cat-breeds" id="ragdoll" value="ragdoll">
+        
+        
+        <label for="bengal">Bengal -</label>
+        <input type="radio" name="cat-breeds" id="bengal" value="bengal">
+        <br>
+
+      <label for="sphynx">Sphynx -</label>
+      <input type="radio" name="cat-breeds" id="sphynx" value="sphynx">
+      <br>
+
+      <label for="tabby">Tabby -</label>
+      <input type="radio" name="cat-breeds" id="tabby" value="tabby">
+
+      <label for="persian">Persian -</label>
+      <input type="radio" name="cat-breeds" id="persian" value="persian">
+
+      <label for="british-shorthair">British Shorthair -</label>
+      <input type="radio" name="cat-breeds" id="british-shorthair" value="british-shorthair">
+      
+  
+    <br>
+    
+      <h3>How many cat's do you own?</h3>
+      
+      <label for="one-cat">One -</label>
+      <input type="radio" name="cats-owned" id="one-cat" value="one-cat">
+        <br>
+      
+
+      <label for="2-cat">Two -</label>
+      <input type="radio" name="cats-owned" id="two-cat" value="2-cat">
+      
+
+      <label for="three-cat">Three -</label>
+      <input type="radio" name="cats-owned" id="three-cat" value="three-cat">
+      
+
+      <label for="over-four">Over Four! -</label>
+      <input type="radio"  name="cats-owned" id="over-four" value="over-four">
+
+        <br>
+
+        <h3>What is your cats name?</h3>
+        
+        <label for="cat-name">Cat's name:</label>
+        <input type="text" name="cat-name" id="cat-name">
+        <br>
+        <hr>
+        <input type="submit" id="submit">
+      
+        
+    </div>
+  </fielset>
+      </form> 
+  
     
     
 
